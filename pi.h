@@ -55,7 +55,7 @@ typedef struct opj_pi_resolution {
 FIXME DOC
 */
 typedef struct opj_pi_comp {
-  OPJ_UINT32 dx, dy;
+  OPJ_UINT32 Δx, Δy;
   /** number of resolution levels */
   OPJ_UINT32 numresolutions;
   opj_pi_resolution_t *resolutions;
@@ -98,7 +98,7 @@ typedef struct opj_pi_iterator {
   /** FIXME DOC*/
   OPJ_INT32 x, y;
   /** FIXME DOC*/
-  OPJ_UINT32 dx, dy;
+  OPJ_UINT32 Δx, Δy;
 } opj_pi_iterator_t;
 
 /** @name Exported functions */

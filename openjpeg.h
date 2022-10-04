@@ -265,7 +265,7 @@ typedef struct opj_poc {
 	/** End value, initialised in pi_initialise_encode */
 	OPJ_UINT32 layE, resE, compE, prcE;
 	/** Start and end values of Tile width and height, initialised in pi_initialise_encode*/
-	OPJ_UINT32 txS,txE,tyS,tyE,dx,dy;
+	OPJ_UINT32 txS,txE,tyS,tyE,Δx,Δy;
 	/** Temporary values for Tile parts, initialised in pi_create_encode */
 	OPJ_UINT32 lay_t, res_t, comp_t, prc_t,tx0_t,ty0_t;
 } opj_poc_t;
@@ -343,9 +343,9 @@ typedef struct opj_cparameters {
 	int image_offset_x0;
 	/** subimage encoding: origin image offset in y direction */
 	int image_offset_y0;
-	/** subsampling value for dx */
+	/** subsampling value for Δx */
 	int subsampling_dx;
-	/** subsampling value for dy */
+	/** subsampling value for Δy */
 	int subsampling_dy;
 	/** input file format 0: PGX, 1: PxM, 2: BMP 3:TIF*/
 	int decod_format;
@@ -532,9 +532,9 @@ typedef void * opj_stream_t;
  * */
 typedef struct opj_image_comp {
 	/** XRsiz: horizontal separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 dx;
+	OPJ_UINT32 Δx;
 	/** YRsiz: vertical separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 dy;
+	OPJ_UINT32 Δy;
 	/** data width */
 	OPJ_UINT32 w;
 	/** data height */
@@ -589,9 +589,9 @@ typedef struct opj_image {
  * */
 typedef struct opj_image_comptparm {
 	/** XRsiz: horizontal separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 dx;
+	OPJ_UINT32 Δx;
 	/** YRsiz: vertical separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 dy;
+	OPJ_UINT32 Δy;
 	/** data width */
 	OPJ_UINT32 w;
 	/** data height */
