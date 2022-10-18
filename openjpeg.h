@@ -1,4 +1,4 @@
- /*
+﻿ /*
  * Copyright (c) 2002-2007, Communications and Remote Sensing Laboratory, Universite catholique de Louvain (UCL), Belgium
  * Copyright (c) 2002-2007, Professor Benoit Macq
  * Copyright (c) 2001-2003, David Janssens
@@ -265,7 +265,7 @@ typedef struct opj_poc {
 	/** End value, initialised in pi_initialise_encode */
 	OPJ_UINT32 layE, resE, compE, prcE;
 	/** Start and end values of Tile width and height, initialised in pi_initialise_encode*/
-	OPJ_UINT32 txS,txE,tyS,tyE,Δx,Δy;
+	OPJ_UINT32 txS,txE,tyS,tyE,dx,dy;
 	/** Temporary values for Tile parts, initialised in pi_create_encode */
 	OPJ_UINT32 lay_t, res_t, comp_t, prc_t,tx0_t,ty0_t;
 } opj_poc_t;
@@ -532,9 +532,9 @@ typedef void * opj_stream_t;
  * */
 typedef struct opj_image_comp {
 	/** XRsiz: horizontal separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 Δx;
+	OPJ_UINT32 dx;
 	/** YRsiz: vertical separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 Δy;
+	OPJ_UINT32 dy;
 	/** data width */
 	OPJ_UINT32 w;
 	/** data height */
@@ -589,9 +589,9 @@ typedef struct opj_image {
  * */
 typedef struct opj_image_comptparm {
 	/** XRsiz: horizontal separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 Δx;
+	OPJ_UINT32 dx;
 	/** YRsiz: vertical separation of a sample of ith component with respect to the reference grid */
-	OPJ_UINT32 Δy;
+	OPJ_UINT32 dy;
 	/** data width */
 	OPJ_UINT32 w;
 	/** data height */

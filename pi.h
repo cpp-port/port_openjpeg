@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2002-2007, Communications and Remote Sensing Laboratory, Universite catholique de Louvain (UCL), Belgium
  * Copyright (c) 2002-2007, Professor Benoit Macq
  * Copyright (c) 2001-2003, David Janssens
@@ -55,7 +55,7 @@ typedef struct opj_pi_resolution {
 FIXME DOC
 */
 typedef struct opj_pi_comp {
-  OPJ_UINT32 Δx, Δy;
+  OPJ_UINT32 dx, dy;
   /** number of resolution levels */
   OPJ_UINT32 numresolutions;
   opj_pi_resolution_t *resolutions;
@@ -98,7 +98,7 @@ typedef struct opj_pi_iterator {
   /** FIXME DOC*/
   OPJ_INT32 x, y;
   /** FIXME DOC*/
-  OPJ_UINT32 Δx, Δy;
+  OPJ_UINT32 dx, dy;
 } opj_pi_iterator_t;
 
 /** @name Exported functions */
