@@ -30,6 +30,8 @@
  */
 
 #include "opj_includes.h"
+#include "cidx_manager.h"
+#include "indexbox_manager.h"
 
 
 /* 
