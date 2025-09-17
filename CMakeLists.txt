@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(openjpeg CXX)
+project(port_openjpeg CXX)
 
 if (MSVC)
     set(CMAKE_DEBUG_POSTFIX "d")
