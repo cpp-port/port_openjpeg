@@ -156,7 +156,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="openjpeg.def">
+    <None Include="port_openjpeg.def">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
