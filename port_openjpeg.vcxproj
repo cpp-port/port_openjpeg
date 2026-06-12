@@ -316,6 +316,9 @@
       <ModuleDefinitionFile>openjpeg.def</ModuleDefinitionFile>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
@@ -425,6 +428,9 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|ARM64'">
     <Midl />
@@ -460,6 +466,9 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -516,6 +525,9 @@
       <ModuleDefinitionFile>openjpeg.def</ModuleDefinitionFile>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ASanStaticDebug|Win32'">
     <ClCompile>
@@ -639,6 +651,9 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|ARM64'">
     <Midl />
@@ -669,6 +684,9 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
     </Link>
+    <PreBuildEvent>
+      <Command> </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ASanStaticDebug|x64'">
     <Midl>
